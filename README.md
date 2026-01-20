@@ -1,6 +1,5 @@
 # acme-synolgoy
 Get Let's Encrypt SSL certification for Synology NAS automatically.
-Cloudflare dns only
 Thanks to [acme.sh](https://github.com/acmesh-official/acme.sh)
 
 ## How
@@ -12,8 +11,8 @@ Thanks to [acme.sh](https://github.com/acmesh-official/acme.sh)
 - Copy and paste the script below to this task, and save this task.
 
 Script:
-``  /volume1/docker/acme/issue_and_install.sh 2>&1 ``
+``  /volume1/docker/acme/cert-up.sh update >> /volume1/docker/acme/log.txt 2>&1 ``
 
 Modify ``config`` file, and put your dns provider key.
 
-Try to run this task for the first time, and see result on acme.log.
+Try to run this task for the first time, and see result on log.txt.
